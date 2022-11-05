@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>出力画面</title>
+</head>
+
+<body>
+    <main class="container">
+        <h1>出力画面</h1>
+        <p>フォームに入力された内容を表示します</p>
+        <table class="table table-success table-striped">
+            <thead class="table-light">
+                <tr>
+                    <th>項目</th>
+                    <th>入力値</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>アカウント名</th>
+                    <td th:text="${accountName}">accountName</td>
+                </tr>
+                <tr>
+                    <th>苗字</th>
+                    <td th:text="${inputForm.lastName}">lastName</td>
+                </tr>
+                <tr>
+                    <th>名前</th>
+                    <td th:text="${inputForm.firstName}">firstName</td>
+                </tr>
+            </tbody>
+        </table>
+        <a class="btn btn-primary my-3" href="./input">入力画面に戻る</a>
+    </main>
+</body>
+
+</html>

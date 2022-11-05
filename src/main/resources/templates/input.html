@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>入力画面</title>
+    <link type="text/css" rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" 
+    rel="stylesheet">
+</head>
+
+<body>
+    <main class="container">
+        <h1>入力画面</h1>
+        <p>名前を入力してください</p>
+        <form th:action="@{/output}" th:method="post">
+            <div class="mb-3">
+                <label for="accout-name" class="form-label">アカウント名</label>
+                <input type="text" class="form-control" id="account-name" name="accountName">
+            </div>
+            <div class="mb-3">
+                <label for="last-name" class="form-label">苗字</label>
+                <input type="text" class="form-control" id="last-name" name="lastName">
+            </div>
+            <div class="mb-3">
+                <label for="first-name" class="form-label">名前</label>
+                <input type="text" class="form-control" id="first-name" name="firstName">
+            </div>
+            <button type="submit" class="btn btn-primary my-3">入力内容を送信する</button>
+        </form>
+    </main>
+</body>
+
+</html>
