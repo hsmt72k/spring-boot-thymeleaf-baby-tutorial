@@ -39,7 +39,7 @@ Spring Boot は、Java を使って、すばやく Web アプリケーション�
 VSCode を開き、Ctrl + Shift + P キーを押す。
 
 コマンドパレットが開いたら、`Spring Initializr` と入力して、
-コマンド「Spring Initializr: Generate a Maven Project」を選択する。
+コマンド「Spring Initializr: Generate a Gradle Project」を選択する。
 
 次に `Specify Spring Boot version.` Spring Boot のバージョンを指定してね、と言われるので、使いたい Spring Boot のバージョンを指定する。
 
